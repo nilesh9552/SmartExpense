@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Dark Mode application theme. -->
+    <style name="Theme.SmartExpense" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color in dark mode. -->
+        <item name="colorPrimary">#10B981</item>
+        <item name="colorOnPrimary">#0F172A</item>
+        <item name="colorPrimaryContainer">#064E3B</item>
+        <item name="colorOnPrimaryContainer">#D1FAE5</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#2DD4BF</item>
+        <item name="colorOnSecondary">#0F172A</item>
+        <item name="colorSecondaryContainer">#134E4A</item>
+
+        <!-- Background & Surface -->
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        <item name="colorSurfaceVariant">@color/surface_variant_dark</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary_dark</item>
+
+        <!-- Status bar and navigation bar -->
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">@color/surface_dark</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+
+        <!-- Default Card Style -->
+        <item name="materialCardViewStyle">@style/Widget.SmartExpense.Card</item>
+        <item name="chipStyle">@style/Widget.SmartExpense.Chip</item>
+    </style>
+
+    <!-- Dark Mode Card style -->
+    <style name="Widget.SmartExpense.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">18dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/card_stroke_dark</item>
+        <item name="cardBackgroundColor">@color/surface_dark</item>
+    </style>
+
+    <!-- Dark Mode Chip Style -->
+    <style name="Widget.SmartExpense.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipCornerRadius">12dp</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">@color/card_stroke_dark</item>
+        <item name="chipBackgroundColor">@color/surface_variant_dark</item>
+    </style>
+</resources>
