@@ -1,7 +1,6 @@
-cat > .github/workflows/android-build.yml <<'EOF'
 name: Expense Manager Android CI/CD
 
-on:
+"on":
   push:
     branches:
       - main
@@ -42,6 +41,5 @@ jobs:
         with:
           tag_name: build-${{ github.run_number }}
           name: SmartExpense Build ${{ github.run_number }}
-          body: Automated APK build from commit ${{ github.sha }}
+          body: Automated APK build
           files: app/build/outputs/apk/debug/*.apk
-EOF
